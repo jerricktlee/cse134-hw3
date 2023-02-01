@@ -1,6 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title> Jerrick Lee </title>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="Portfolio website for Jerrick Lee">
+        <meta name="author" content="Jerrick Lee">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Jerrick Lee | Portfolio</title>
+
+        <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
+    <style>
+        p {
+            font-size: 16px;
+        }
+    </style>
+
+    <body>
+
+        <header>
+            <a href="index.html"><b>Jerrick Lee</b></a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a> </li>
+                    <li><a href="#projects">Projects</a></li> 
+                    <li><a href="#contact">Contact</a></li> 
+                    <li><a href="experimental.html">Experimental</a></li> 
+                    <li><a href="resume.html" target="_blank" >Resume</a></li> 
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section id="home">
+                <img src="images/profile_picture_1.JPG" alt="Profile Picture 1" width="200" height="250">
+                <h1>Jerrick Lee</h1>
+                <h2><em>Computer Science student @ UCSD</em></h2>
+                <button>Enter Portfolio</button>
+            </section>
+        </main>
+        
+        <hr/>
+
+        <section id="about">
+            <picture>
+                <source media="(min-width: 300px)" srcset="images/profile_picture_2.JPG">
+                <img src="images/profile_picture_2.JPG" alt="Profile Picture 2" width="300">
+            </picture>
+            <div id="social_buttons">
+                <ui>
+                    <li>Facebook</li>
+                    <li>LinkedIn</li>
+                    <li>GitHub</li>
+                </ui>
+            </div>
+            <h2>Jerrick Lee</h2>
+            <h3>Graduate year, degree, student @ schoolname</h3> 
+            <p>
+            <pre>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </pre>
+            </p>
+            <h4>Interests Section</h4>
+            <ol>
+                <li>Interest 1</li>
+                <li>Interest 2</li>
+                <li>Hobby 1</li>
+                <li>Hobby 2</li>
+            </ol>
+                <h3><strong>Learn more about my:</strong></h3>
+                <button>Projects</button>
+                <button>Resume</button>
+        </section>
+
+        <hr/>
+
+        <section id="projects"">
+            <p><span style="color:gold">Portfolio</span></p>
+            <h2>Personal Projects</h2>
+            <p>Here is a collection of both my personal projects and academic projects.
+                <br>(To be updated)
+            </p> 
+            <div>
+                <img src="images/project_placeholder_image.png" alt="Project 1 Image" width="150">
+                <h2>Project 1</h2>
+                <p>This is an android app project.</p>
+                <a href="https://github.com/jerricktlee">Project 1 Link</a>
+            </div>
+            <div>
+                <img src="images/project_placeholder_image.png" alt="Project 2 Image" width="150">
+                <h2>Project 2</h2>
+                <p>This is a discord bot project.</p>
+                <a href="https://github.com/jerricktlee">Project 2 Link</a>
+            </div>
+            <div>
+                <img src="images/project_placeholder_image.png" alt="Project 3 Image" width="150">
+                <h2>Project 3</h2>
+                <p>This is a web project.</p>
+                <a href="https://github.com/jerricktlee">Project 3 Link</a>
+            </div>
+        </section>
+
+        <hr/>
+        
+        <section id="contact">
+            <h2>Contact Me</h2>
+            <p>Email: <a href="mailto:jtl008@ucsd.edu">jtl008@ucsd.edu</a> || <a href="mailto:jerricktlee@gmail.com">jerricktlee@gmail.com</a></p>
+            
+            <form action="mailto:jtl008@ucsd.edu" method="POST">
+                <fieldset>
+                    <legend>Your Information:</legend>
+                    <label for="Your Name">Your Name<br>
+                        <input type="text" name="yourName" id="yourName">
+                    </label>
+                    <br>
+                    <label for="Your Email">Your Email<br>
+                        <input type="text" name="yourEmail" id="yourEmail">
+                    </label>
+                    <br>
+                    <label for="Your Phone">Your Phone<br>
+                        <input type="text" name="yourPhone" id="yourPhone">
+                    </label>
+                    <br>
+                    <label for="Your Message">Your Message<br>
+                        <textarea name="yourMessage" id="yourMessage"></textarea>
+                    </label>
+                    <br>
+                    <button type="sendMessage">Send Message</button>
+            </fieldset>
+            </form>
+        </section>
+
+        <hr/>
+
+        <footer>
+            <a href=“https:www.linkedin.com/in/jerrick-lee-296763238/>LinkedIn</a>
+            <a href="https://github.com/jerricktlee">GitHub</a>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </footer>
+
+    </body>
 </html>
