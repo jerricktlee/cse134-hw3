@@ -16,21 +16,23 @@
     color: var(--default-bg);
 }
 
+@media screen {
 /* Customized scrollbar */
-::-webkit-scrollbar {
-    width: 1em;
-}
+    ::-webkit-scrollbar {
+        width: 1em;
+    }
 
-::-webkit-scrollbar-track {
-    background-color: hsl(180 100% 97% / 1);
-}
+    ::-webkit-scrollbar-track {
+        background-color: hsl(180 100% 97% / 1);
+    }
 
-::-webkit-scrollbar-thumb {
-    background-color: rgb(123, 138, 135);
-}
+    ::-webkit-scrollbar-thumb {
+        background-color: rgb(123, 138, 135);
+    }
 
-::-webkit-scrollbar-thumb:hover {
-    background-color: hsl(168 67% 54% / 1);
+    ::-webkit-scrollbar-thumb:hover {
+        background-color: hsl(168 67% 54% / 1);
+    }
 }
 
 @supports (scrollbar-color:  rgb(123, 138, 135) hsl(180 100% 97% / 1)) {
