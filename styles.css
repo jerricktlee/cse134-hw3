@@ -188,24 +188,6 @@ main h2 {
     justify-content: center;
 }
 
-/* @media (min-width: 50em) {
-    .grid-container {
-        grid-template-columns: repeat(3, 1fr);
-    }
-    .about-grid-image {
-        grid-column: 1 / 2;
-        transform: translate(0px, 10px);
-    }
-    
-    .background-rectangle, .about-grid-image, .about-grid-text {
-        grid-row: 1 / 2;
-    }
-    
-    .background-rectangle, .about-grid-buttons {
-        grid-column: 1 / 4;
-    }
-} */
-
 @media (min-width: 60em) {
     .grid-container {
         grid-template-columns: repeat(3, 1fr);
@@ -235,35 +217,6 @@ main h2 {
     }
 
 }
-
-/* @media (min-wdith: 1200px) {
-    .about-grid-links {
-        grid-column: 1 / 4;
-    }
-} */
-
-/* .background-rectangle{
-    width: 100%;
-    height:13em;
-    background-color: #149c6a;
-    background-image: linear-gradient(145deg,var(--accent-color),#67faff);
-    content: "";
-    border-radius: 1em;
-    z-index: -1;
-} */
-
-/* .about-grid-image {
-    grid-column: 1 / 2;
-    transform: translate(0px, 10px);
-}
-
-.background-rectangle, .about-grid-image, .about-grid-text {
-    grid-row: 1 / 2;
-}
-
-.background-rectangle, .about-grid-buttons {
-    grid-column: 1 / 4;
-} */
 
 .about-grid-text {
     text-align: left;
@@ -318,10 +271,6 @@ main h2 {
     #contact{
         gap: 4rem;
         grid-template-columns: .7fr .3fr;
-    }
-
-    .contact-info > h3 {
-        padding-top: -20px;
     }
 
     .contact-info > h4 {
