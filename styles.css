@@ -161,6 +161,10 @@ main h2 {
         font-size: 1em;
         margin-bottom: 25%;
     }
+
+    header > nav {
+        font-size: .75em;
+    }
  }
 
 /* cursor blinking animation */
@@ -184,7 +188,7 @@ main h2 {
     justify-content: center;
 }
 
-@media (min-width: 50em) {
+/* @media (min-width: 50em) {
     .grid-container {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -200,18 +204,53 @@ main h2 {
     .background-rectangle, .about-grid-buttons {
         grid-column: 1 / 4;
     }
+} */
+
+@media (min-width: 60em) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .about-grid-image {
+        grid-column: 1 / 2;
+        transform: translate(0px, 10px);
+    }
+    
+    .about-grid-image, .about-grid-text {
+        grid-row: 1 / 2;
+    }
+    
+    .about-grid-buttons {
+        grid-column: 1 / 4;
+    }
+
+    .about-grid-text {
+        grid-column: 2 / 4;
+        /* transform: translate(-30px, 50px); */
+        text-align: left;
+    }
+
+    .project-grid {
+        gap: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
 }
 
-.background-rectangle{
+/* @media (min-wdith: 1200px) {
+    .about-grid-links {
+        grid-column: 1 / 4;
+    }
+} */
+
+/* .background-rectangle{
     width: 100%;
     height:13em;
-    /* height:200px; */
     background-color: #149c6a;
     background-image: linear-gradient(145deg,var(--accent-color),#67faff);
     content: "";
     border-radius: 1em;
     z-index: -1;
-}
+} */
 
 /* .about-grid-image {
     grid-column: 1 / 2;
@@ -227,8 +266,6 @@ main h2 {
 } */
 
 .about-grid-text {
-    grid-column: 2 / 4;
-    transform: translate(-30px, 50px);
     text-align: left;
 }
 
@@ -277,14 +314,30 @@ main h2 {
     font-size: 1.2rem;
 }
 
+@media (min-width:1100px) {
+    #contact{
+        gap: 4rem;
+        grid-template-columns: .7fr .3fr;
+    }
+
+    .contact-info > h3 {
+        padding-top: -20px;
+    }
+
+    .contact-info > h4 {
+        font-size: 2em;
+        padding-top: 50px;
+    }
+}
+
 .project-grid {
     display: grid;
     padding-top: 5%;
     padding-bottom: 10%;
     padding-left: 15%;
     padding-right: 15%;
-    gap: 2rem;
-    grid-template-columns: repeat(3, 1fr);
+    /* gap: 2rem;
+    grid-template-columns: repeat(3, 1fr); */
 }
 
 .project-card {
@@ -318,6 +371,12 @@ main h2 {
     color:var(--accent-color);
 }
 
+@media only all and (max-width: 950px) {
+    .project-image {
+        width: 150px;
+    }
+ }
+
 /*contact section*/
 #contact {
     display: grid;
@@ -325,8 +384,6 @@ main h2 {
     padding-bottom: 10%;
     padding-left: 15%;
     padding-right: 15%;
-    gap: 4rem;
-    grid-template-columns: .7fr .3fr;
     justify-content: center;
 }
 
@@ -404,12 +461,13 @@ main h2 {
 
 .contact-info > h3 {
     font-size: 2em;
+    padding-top: 20px;
     padding-bottom: 20px;
 }
 
 .contact-info > h4 {
     font-size: 2em;
-    padding-top: 50px;
+    padding-top: 10px;
 }
 
 .contact-info > ul {
@@ -467,4 +525,30 @@ main h2 {
 
 #about-to-project-button:hover{
     border-color: var(--accent-color);
+}
+
+/* Footer */
+footer {
+    background-color: rgba(115, 116, 116, 0.27);
+}
+footer ul {
+    padding: 5%;
+    display: flex;
+    justify-content: center;
+}
+
+footer li{
+    display: inline-block;
+    text-decoration: none;
+    padding-left: 20px;
+}
+
+footer a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color:var(--default-text);
+}
+
+footer a:hover {
+    color:var(--accent-color);
 }

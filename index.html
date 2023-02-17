@@ -42,19 +42,16 @@
                 <h1>Jerrick Lee</h1>
                 <div id="typeWriterContainer"><h2><em>Computer Science Student @ UCSD</em></h2></div>
                 <br>
-                <a href="#about", class="directing-button" id="enterPortfolioButton">View My Portfolio</a>
+                <a href="#about" class="directing-button" id="enterPortfolioButton">View My Portfolio</a>
             </section>
         </main>
 
         <section id="about">
             <div class="grid-container">
-            <div class="background-rectangle"></div>
-            <!-- <div class="about-grid-image"> -->
                 <picture class="about-grid-image">
                     <source media="(min-width: 300px)" srcset="images/profile_picture_2.webp">
                     <img id="profilePicture2" src="images/profile_picture_2.webp" alt="Jerrick smiling in garden">
                 </picture>
-            <!-- </div> -->
             <div class="about-grid-text">
                 <h2 class="about-grid-h2">Hi there! I'm Jerrick and welcome to my portfolio. I'm an undergraduate student
                     studying computer science at UCSD.
@@ -67,10 +64,12 @@
                 tuxedo cats. 
                 </p>
             </div> 
-            <ul class="about-grid-links">
-                <li><a href="www.linkedin.com/in/jerrick-l-296763238" target="_blank"><img id="linkedIn-favicon" src="images/icons/linkedin-icon.svg"></a></li>
-                <li><a href="https://github.com/jerricktlee" target="_blank"><img id="github-favicon" src="images/icons/github-icon.svg"></a></li>
-            </ul>
+            <div>
+                <ul class="about-grid-links">
+                    <li><a href="www.linkedin.com/in/jerrick-l-296763238" target="_blank"><img id="linkedIn-favicon" src="images/icons/linkedin-icon.svg" alt="Favicon button that directs to linkedIn."></a></li>
+                    <li><a href="https://github.com/jerricktlee" target="_blank"><img id="github-favicon" src="images/icons/github-icon.svg" alt="Favicon button that directs to GitHub."></a></li>
+                </ul>
+            </div>
             <div class="about-grid-buttons">
                     <h3><strong>Learn more about my:</strong></h3>
                     <br><br>
@@ -120,8 +119,6 @@
                 <h2>Want to connect?</h2>
                 <p id="form-message">I'd love to hear from you! Let me know what you'd like to discuss.</p> 
                 <form action="mailto:jtl008@ucsd.edu" method="POST">
-                    <!-- <fieldset> -->
-                        <!-- <legend>Your Information:</legend> -->
                         <label for="yourName"><br>
                             <input type="text" maxlength="256" name="yourName" id="yourName" placeholder="Your name" class="form-input-field" required>
                         </label>
@@ -135,11 +132,10 @@
                         </label>
                         <br>
                         <label for="yourMessage">
-                            <textarea overflow="auto"name="yourMessage"id="yourMessage"placeholder="Your message"maxlength="5000"resize="vertical"class="form-textarea-field"required></textarea>
+                            <textarea name="yourMessage" id="yourMessage" placeholder="Your message" maxlength="5000" class="form-textarea-field" required></textarea>
                         </label>
                         <br>
                         <input type="submit" value="Send message" data-wait="Sending..." class="form-submit-button">
-                <!-- </fieldset> -->
                 </form>
             </div>
 
@@ -155,8 +151,8 @@
                 <a href="mailto:jerricktlee@gmail.com" class="link-contact-email">jerricktlee@gmail.com</a>
                 <h4>Links </h4> 
                 <ul class="about-grid-links">
-                <li><a href="www.linkedin.com/in/jerrick-l-296763238" target="_blank"><img id="linkedIn-favicon-2" src="images/icons/linkedin-icon.svg"></a></li>
-                <li><a href="https://github.com/jerricktlee" target="_blank"><img id="github-favicon-2" src="images/icons/github-icon.svg"></a></li>
+                <li><a href="www.linkedin.com/in/jerrick-l-296763238" target="_blank"><img id="linkedIn-favicon-2" src="images/icons/linkedin-icon.svg" alt="Favicon button that directs to linkedIn."></a></li>
+                <li><a href="https://github.com/jerricktlee" target="_blank"><img id="github-favicon-2" src="images/icons/github-icon.svg" alt="Favicon button that directs to GitHub."></a></li>
             </ul>
             </div>
         </section>
@@ -164,13 +160,11 @@
         <hr>
 
         <footer>
-            <a href=“https:www.linkedin.com/in/jerrick-lee-296763238/>LinkedIn</a>
-            <a href="https://github.com/jerricktlee">GitHub</a>
             <ul>
-                <li>
-                    <a href="index.html">Home</a>
-                    <a href="contact.html">Contact</a>
-                </li>
+                <li><a href="/"><b>Home</b></a></li>
+                <li><a href="#contact"><b>Contact</b></a></li>
+                <li><a href="https://github.com/jerricktlee" target="_blank"><b>Github</b></a></li>
+                <li><a href="www.linkedin.com/in/jerrick-l-296763238" target="_blank"><b>LinkedIn</b></a></li>
             </ul>
         </footer>
 
